@@ -4,22 +4,21 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
+    private var mainWindow: NSWindow?
 
-    @IBOutlet var window: NSWindow!
+    func applicationDidFinishLaunching(_: Notification) {
+        let application_start_time = CFAbsoluteTimeGetCurrent()
 
+        // create and show mainWindow
+        mainWindow = MainWindow()
+        mainWindow!.makeKeyAndOrderFront(self)
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        let application_start_interval = CFAbsoluteTimeGetCurrent() - application_start_time
+        print("[Start of application spent \(application_start_interval)s]")
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+    // settings
+    func applicationShouldTerminateAfterLastWindowClosed(_: NSApplication) -> Bool {
+        true
     }
-
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-        return true
-    }
-
-
 }
-

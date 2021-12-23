@@ -10,7 +10,7 @@ class DisplayWindow: NSWindow {
                   styleMask: [.titled, .closable, .miniaturizable],
                   backing: .buffered,
                   defer: true)
-        self.title = "myDisplay211223"
+        self.title = "myDisplay"
         self.setFrameOrigin(.zero) // screen (0,0)
         self.setContentSize(.init(width: DISPLAY.display_width, height: DISPLAY.display_height))
 

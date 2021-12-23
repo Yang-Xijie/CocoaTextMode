@@ -1,5 +1,7 @@
 import Foundation
 
+//http://www.piclist.com/tecHREF/datafile/charset/extractor/charset_extractor.htm
+
 extension Character {
     var bytes: [UInt8] {
         switch self {

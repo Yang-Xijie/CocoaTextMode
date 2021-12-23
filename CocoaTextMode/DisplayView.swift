@@ -1,6 +1,7 @@
 import Cocoa
 
 class DisplayView: NSView {
+    // TODO: make it a dynamic property
     private var stringlines: [String] = []
 
     convenience init() {

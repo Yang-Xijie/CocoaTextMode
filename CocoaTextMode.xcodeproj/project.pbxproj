@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		48E013BF27741F2400F79D98 /* 211223-NSViewDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "211223-NSViewDraw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E013BF27741F2400F79D98 /* CocoaTextMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaTextMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E013C227741F2400F79D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E013C427741F2600F79D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48E013C727741F2600F79D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		48E013C927741F2600F79D98 /* _11223_NSViewDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _11223_NSViewDraw.entitlements; sourceTree = "<group>"; };
+		48E013C927741F2600F79D98 /* CocoaTextMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CocoaTextMode.entitlements; sourceTree = "<group>"; };
 		48E013CF27741F4700F79D98 /* DisplayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWindow.swift; sourceTree = "<group>"; };
 		48E013D127741F5900F79D98 /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		48E013D327743A2100F79D98 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		48E013B627741F2400F79D98 = {
 			isa = PBXGroup;
 			children = (
-				48E013C127741F2400F79D98 /* 211223-NSViewDraw */,
+				48E013C127741F2400F79D98 /* CocoaTextMode */,
 				48E013C027741F2400F79D98 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		48E013C027741F2400F79D98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48E013BF27741F2400F79D98 /* 211223-NSViewDraw.app */,
+				48E013BF27741F2400F79D98 /* CocoaTextMode.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		48E013C127741F2400F79D98 /* 211223-NSViewDraw */ = {
+		48E013C127741F2400F79D98 /* CocoaTextMode */ = {
 			isa = PBXGroup;
 			children = (
 				48E013C227741F2400F79D98 /* AppDelegate.swift */,
@@ -73,9 +73,9 @@
 				48E013D72774408700F79D98 /* UInt8+.swift */,
 				48E013C427741F2600F79D98 /* Assets.xcassets */,
 				48E013C627741F2600F79D98 /* MainMenu.xib */,
-				48E013C927741F2600F79D98 /* _11223_NSViewDraw.entitlements */,
+				48E013C927741F2600F79D98 /* CocoaTextMode.entitlements */,
 			);
-			path = "211223-NSViewDraw";
+			path = CocoaTextMode;
 			sourceTree = "<group>";
 		};
 		48E013DB277459A700F79D98 /* DisplayConfig */ = {
@@ -90,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		48E013BE27741F2400F79D98 /* 211223-NSViewDraw */ = {
+		48E013BE27741F2400F79D98 /* CocoaTextMode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48E013CC27741F2600F79D98 /* Build configuration list for PBXNativeTarget "211223-NSViewDraw" */;
+			buildConfigurationList = 48E013CC27741F2600F79D98 /* Build configuration list for PBXNativeTarget "CocoaTextMode" */;
 			buildPhases = (
 				48E013BB27741F2400F79D98 /* Sources */,
 				48E013BC27741F2400F79D98 /* Frameworks */,
@@ -102,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = "211223-NSViewDraw";
+			name = CocoaTextMode;
 			productName = "211223-NSViewDraw";
-			productReference = 48E013BF27741F2400F79D98 /* 211223-NSViewDraw.app */;
+			productReference = 48E013BF27741F2400F79D98 /* CocoaTextMode.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 48E013BA27741F2400F79D98 /* Build configuration list for PBXProject "211223-NSViewDraw" */;
+			buildConfigurationList = 48E013BA27741F2400F79D98 /* Build configuration list for PBXProject "CocoaTextMode" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48E013BE27741F2400F79D98 /* 211223-NSViewDraw */,
+				48E013BE27741F2400F79D98 /* CocoaTextMode */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "211223-NSViewDraw/_11223_NSViewDraw.entitlements";
+				CODE_SIGN_ENTITLEMENTS = CocoaTextMode/CocoaTextMode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -329,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "211223-NSViewDraw/_11223_NSViewDraw.entitlements";
+				CODE_SIGN_ENTITLEMENTS = CocoaTextMode/CocoaTextMode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		48E013BA27741F2400F79D98 /* Build configuration list for PBXProject "211223-NSViewDraw" */ = {
+		48E013BA27741F2400F79D98 /* Build configuration list for PBXProject "CocoaTextMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48E013CA27741F2600F79D98 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E013CC27741F2600F79D98 /* Build configuration list for PBXNativeTarget "211223-NSViewDraw" */ = {
+		48E013CC27741F2600F79D98 /* Build configuration list for PBXNativeTarget "CocoaTextMode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48E013CD27741F2600F79D98 /* Debug */,

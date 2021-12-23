@@ -2,13 +2,12 @@
 
 import Cocoa
 
-class MainWindow: NSWindow {
-    // MARK: - MainView
-
-    private var mainView: MainView?
+class DisplayWindow: NSWindow {
+    private var mainView: DisplayView?
 
     convenience init() {
-        // create and configure self
+        // MARK: create and configure self
+
         self.init(contentRect: .zero,
                   styleMask: [.titled, .closable, .miniaturizable],
                   backing: .buffered,
@@ -17,8 +16,9 @@ class MainWindow: NSWindow {
         self.setFrameOrigin(.zero) // screen (0,0)
         self.setContentSize(.init(width: DISPLAY.display_width, height: DISPLAY.display_height))
 
-        // add mainView
-        mainView = MainView()
+        // MARK: create and add mainView
+
+        mainView = DisplayView()
         self.contentView = mainView!
     }
 }

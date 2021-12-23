@@ -3,18 +3,16 @@
 import Cocoa
 
 class CharacterRowView: NSView {
-    static let backgroundColor = NSColor.black
-
     private var string: String?
 
     convenience init(string: String) {
-        // create and configure self
+        // MARK: create and configure self
+
         self.init(frame: .zero)
         self.setFrameSize(.init(width: Double(DISPLAY.character_count_horizontal) * DISPLAY.character_width, height: DISPLAY.character_height))
-        self.wantsLayer = true
-        self.layer?.backgroundColor = Self.backgroundColor.cgColor
 
-        // properties
+        // MARK: properties
+
         self.string = string
     }
 
@@ -23,7 +21,7 @@ class CharacterRowView: NSView {
 
         if let string = string {
             // only draw character that on the display
-            for column in 0 ... min(DISPLAY.character_count_horizontal - 1, string.count - 1) {
+            for column in 0 ..< min(DISPLAY.character_count_horizontal, string.count) {
                 let characterView = CharacterView(
                     character: string[string.index(string.startIndex, offsetBy: column)])
                 characterView.setFrameOrigin(.init(x: Double(column) * DISPLAY.character_width, y: 0))

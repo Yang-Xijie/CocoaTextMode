@@ -1,13 +1,15 @@
 // PixleConfig.swift
 
-import Foundation
+import Cocoa
 
 struct DisplayConfig {
-    // pixel
+    // MARK: pixel
+
     let pixel_width: Double = 2
     let pixel_height: Double = 2
 
-    // character
+    // MARK: character
+
     let pixel_count_horizontal: Int = 8
     let pixel_count_vertical: Int = 12
 
@@ -19,7 +21,8 @@ struct DisplayConfig {
         Double(pixel_count_vertical) * pixel_height
     }
 
-    // display
+    // MARK: display
+
     let character_count_horizontal: Int = 80
     let character_count_vertical: Int = 25
 
@@ -30,6 +33,11 @@ struct DisplayConfig {
     var display_height: Double {
         Double(character_count_vertical) * character_height
     }
+
+    // MARK: color
+
+    let backgroundColor = NSColor.black
+    let foregroundColor = NSColor.white
 }
 
 let DISPLAY = DisplayConfig()

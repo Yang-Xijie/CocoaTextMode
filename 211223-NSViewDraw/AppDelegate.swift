@@ -4,17 +4,18 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-    // MARK: - window
+    // MARK: mainWindow
 
-    private var mainWindow: MainWindow?
+    private var mainWindow: DisplayWindow?
 
     func applicationDidFinishLaunching(_: Notification) {
-        // create and show mainWindow
-        mainWindow = MainWindow()
+        // MARK: create and show mainWindow
+
+        mainWindow = DisplayWindow()
         mainWindow!.makeKeyAndOrderFront(self)
     }
 
-    // MARK: - settings
+    // MARK: settings
 
     func applicationShouldTerminateAfterLastWindowClosed(_: NSApplication) -> Bool {
         true

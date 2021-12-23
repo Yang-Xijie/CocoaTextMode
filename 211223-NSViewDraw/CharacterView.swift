@@ -1,13 +1,19 @@
 import AppKit
 
 class CharacterView: NSView {
-    var character: Character?
+    private var character: Character?
 
     convenience init(character: Character) {
         self.init(frame: .zero)
         self.setFrameSize(NSSize(width: DISPLAY.character_width, height: DISPLAY.character_height))
 
         self.character = character
+    }
+
+    // haven't tested
+    convenience init(ascii: UInt8) {
+        let ch = Character(Unicode.Scalar(ascii))
+        self.init(character: ch)
     }
 
     // add initializer to directly pass [UInt8] in
@@ -20,12 +26,11 @@ class CharacterView: NSView {
         let bytes = character!.bytes
         for row in 0 ... DISPLAY.pixel_count_vertical - 1 {
             for column in 0 ... DISPLAY.pixel_count_horizontal - 1 {
-                let x = Double(column) * DISPLAY.pixel_width
-                let y = Double(row) * DISPLAY.pixel_height
-
-                if bytes[row][column] == true {
+                if bytes[DISPLAY.pixel_count_vertical - 1 - row][DISPLAY.pixel_count_horizontal - 1 - column] == true {
+                    // one pixel
+                    let x = Double(column) * DISPLAY.pixel_width
+                    let y = Double(row) * DISPLAY.pixel_height
                     NSColor.white.setFill()
-                    // 放到次线程同时绘制试一下
                     NSRect(x: x, y: y, width: DISPLAY.pixel_width, height: DISPLAY.pixel_height).fill()
                 }
             }

@@ -4,8 +4,8 @@ import Foundation
 
 struct DisplayConfig {
     // pixel
-    let pixel_width: Double = 10
-    let pixel_height: Double = 10
+    let pixel_width: Double = 2
+    let pixel_height: Double = 2
 
     // character
     let pixel_count_horizontal: Int = 8

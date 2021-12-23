@@ -3,7 +3,7 @@
 import Cocoa
 
 class MainWindow: NSWindow {
-    private var mainView: MainView = MainView()
+    private var mainView: MainView?
 
     convenience init() {
         // create window
@@ -14,10 +14,11 @@ class MainWindow: NSWindow {
 
         // configure window
         self.title = "myDisplay211223"
-        self.setContentSize(.init(width: 800, height: 400))
+        self.setContentSize(.init(width: DISPLAY.display_width, height: DISPLAY.display_height))
         self.setFrameOrigin(.zero) // screen (0,0)
 
         // add mainView
+        mainView = MainView()
         self.contentView = mainView
     }
 }

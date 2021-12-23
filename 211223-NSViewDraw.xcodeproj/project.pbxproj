@@ -15,6 +15,7 @@
 		48E013D427743A2100F79D98 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E013D327743A2100F79D98 /* CharacterView.swift */; };
 		48E013D627743B4100F79D98 /* DISPLAY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E013D527743B4100F79D98 /* DISPLAY.swift */; };
 		48E013D82774408700F79D98 /* UInt8+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E013D72774408700F79D98 /* UInt8+.swift */; };
+		48E013DA2774440B00F79D98 /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E013D92774440B00F79D98 /* CharacterRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		48E013D327743A2100F79D98 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		48E013D527743B4100F79D98 /* DISPLAY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DISPLAY.swift; sourceTree = "<group>"; };
 		48E013D72774408700F79D98 /* UInt8+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt8+.swift"; sourceTree = "<group>"; };
+		48E013D92774440B00F79D98 /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				48E013C227741F2400F79D98 /* AppDelegate.swift */,
 				48E013CF27741F4700F79D98 /* MainWindow.swift */,
 				48E013D127741F5900F79D98 /* MainView.swift */,
+				48E013D92774440B00F79D98 /* CharacterRowView.swift */,
 				48E013D327743A2100F79D98 /* CharacterView.swift */,
 				48E013D527743B4100F79D98 /* DISPLAY.swift */,
 				48E013D72774408700F79D98 /* UInt8+.swift */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E013DA2774440B00F79D98 /* CharacterRowView.swift in Sources */,
 				48E013D027741F4700F79D98 /* MainWindow.swift in Sources */,
 				48E013D227741F5900F79D98 /* MainView.swift in Sources */,
 				48E013D82774408700F79D98 /* UInt8+.swift in Sources */,

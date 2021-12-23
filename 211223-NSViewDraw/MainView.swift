@@ -3,7 +3,7 @@
 import Cocoa
 
 class MainView: NSView {
-    private var characterView: CharacterView?
+    private var charactersView: CharacterRowView?
 
     convenience init() {
         // mainView will extent to mainWindow.frame
@@ -13,8 +13,7 @@ class MainView: NSView {
         self.wantsLayer = true
         self.layer?.backgroundColor = CGColor.black
 
-        self.characterView = CharacterView(character: "A")
-        self.addSubview(characterView!)
+        self.charactersView = CharacterRowView(string: "hello~!~!")
+        self.addSubview(charactersView!)
     }
-    
 }

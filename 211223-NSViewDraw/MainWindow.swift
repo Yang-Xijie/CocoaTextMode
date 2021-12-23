@@ -3,22 +3,22 @@
 import Cocoa
 
 class MainWindow: NSWindow {
+    // MARK: - MainView
+
     private var mainView: MainView?
 
     convenience init() {
-        // create window
+        // create and configure self
         self.init(contentRect: .zero,
                   styleMask: [.titled, .closable, .miniaturizable],
                   backing: .buffered,
                   defer: true)
-
-        // configure window
         self.title = "myDisplay211223"
-        self.setContentSize(.init(width: DISPLAY.display_width, height: DISPLAY.display_height))
         self.setFrameOrigin(.zero) // screen (0,0)
+        self.setContentSize(.init(width: DISPLAY.display_width, height: DISPLAY.display_height))
 
         // add mainView
         mainView = MainView()
-        self.contentView = mainView
+        self.contentView = mainView!
     }
 }

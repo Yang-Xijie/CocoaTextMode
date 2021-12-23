@@ -1,26 +1,21 @@
 import AppKit
 
 class CharacterView: NSView {
+    static let foregroundColor = NSColor.white
+
     private var character: Character?
 
     convenience init(character: Character) {
+        // create self
         self.init(frame: .zero)
         self.setFrameSize(NSSize(width: DISPLAY.character_width, height: DISPLAY.character_height))
 
+        // properties
         self.character = character
     }
 
-    // haven't tested
-    convenience init(ascii: UInt8) {
-        let ch = Character(Unicode.Scalar(ascii))
-        self.init(character: ch)
-    }
-
-    // add initializer to directly pass [UInt8] in
-
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-        print("draw")
 
         // draw 8*12 pixels
         let bytes = character!.bytes
@@ -30,7 +25,7 @@ class CharacterView: NSView {
                     // one pixel
                     let x = Double(column) * DISPLAY.pixel_width
                     let y = Double(row) * DISPLAY.pixel_height
-                    NSColor.white.setFill()
+                    Self.foregroundColor.setFill()
                     NSRect(x: x, y: y, width: DISPLAY.pixel_width, height: DISPLAY.pixel_height).fill()
                 }
             }

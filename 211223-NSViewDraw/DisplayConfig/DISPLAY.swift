@@ -1,5 +1,3 @@
-// PixleConfig.swift
-
 import Cocoa
 
 struct DisplayConfig {

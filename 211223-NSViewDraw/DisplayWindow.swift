@@ -1,5 +1,3 @@
-// MainWindow.swift
-
 import Cocoa
 
 class DisplayWindow: NSWindow {

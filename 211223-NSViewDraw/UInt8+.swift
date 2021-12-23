@@ -1,5 +1,3 @@
-// UInt8+.swift
-
 import Foundation
 
 extension UInt8 {

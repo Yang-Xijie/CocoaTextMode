@@ -1,5 +1,3 @@
-// MainView.swift
-
 import Cocoa
 
 class CharacterRowView: NSView {

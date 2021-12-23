@@ -1,4 +1,4 @@
-import AppKit
+import Cocoa
 
 class CharacterView: NSView {
     private var character: Character?
